@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Something Awful Theme Sync",
+  "version": "1.0.0",
+  "description": "Toggles Something Awful Forums dark.css in sync with the system light/dark theme.",
+  "host_permissions": ["https://forums.somethingawful.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://forums.somethingawful.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
